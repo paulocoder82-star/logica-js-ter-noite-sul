@@ -141,3 +141,9 @@ const nomeCompleto3 = `Olá! Meu nome completo é ${nome1} ${nome2} ${nome3} ${n
 console.log(nomeCompleto3);
 
 // crie uma variável, coloque dentro de uma variável usando template string e mostre o resultado no console
+
+let meuCarro = "Fusca";
+
+let frase = `Eu tenho um ${meuCarro}`;
+
+console.log(frase);
