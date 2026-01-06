@@ -140,3 +140,21 @@ switch (cor) {
     console.log("caiu no default");
     break;
 }
+
+function avaliarNota(nota) {
+  if (nota >= 7) {
+    return "Aprovado";
+  } else if (nota >= 5) {
+    return "Recuperação";
+  } else {
+    return "Reprovado";
+  }
+}
+
+const aluno1 = avaliarNota(9);
+const aluno2 = avaliarNota(5);
+const aluno3 = avaliarNota(3.5);
+
+console.log(aluno1);
+console.log(aluno2);
+console.log(aluno3);
