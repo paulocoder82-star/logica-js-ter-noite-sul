@@ -98,25 +98,104 @@ console.log(suportePapel);
 console.log(caixaFechada);
 
 // Crie um array com 5 nomes. Exiba o primeiro e o último nome usando índice.
+const receitaBruaca = ["farinha de trigo", "leite", "ovos", "manteiga", "sal"];
+
+console.log(
+  "A receita para fazer uma bruaca tem os seguintes ingredientes:",
+  receitaBruaca
+);
+console.log("Primeiro ingrediente:", receitaBruaca[0]);
+
+console.log("Último ingrediente:", receitaBruaca[4]);
+
+console.log(
+  "Primeiro e último ingrediente:",
+  receitaBruaca[0],
+  receitaBruaca[4]
+);
 
 // Modifique o terceiro nome do array criado acima por outro nome. Mostre o array atualizado.
+receitaBruaca[4] = "açucar";
+console.log(
+  "A receita para fazer uma bruaca tem os seguintes ingredientes:",
+  receitaBruaca
+);
 
 // Crie um array com 3 números e mostre a soma deles usando os índices.
 
+const numeros = [10, 20, 30];
+
+const soma1 = numeros[0] + numeros[1] + numeros[2];
+
+console.log("A soma dos números é:", soma1);
+
 // Crie um objeto representando uma pessoa com nome, idade e cidade. Exiba cada propriedade separadamente.
+const pessoa = { denome: "Ana Silva", idade: 28, cidade: "Fortaleza" };
+
+console.log("Nome:", pessoa.nome);
+console.log("Idade:", pessoa.idade);
+console.log("Cidade:", pessoa.cidade);
 
 // Adicione a esse objeto uma nova propriedade chamada profissao. Mostre o objeto atualizado.
+pessoa.profissao = "professor";
 
+console.log("Objeto atualizado:", pessoa);
 // Delete a propriedade idade do objeto. Exiba o objeto novamente.
+delete pessoa.idade;
+console.log("Objeto deletando a idade:", pessoa);
 
 // Crie um objeto representando um produto (nome e preço). Mostre o tipo de cada propriedade usando typeof.
-
+const produto = {
+  nome: "Guitarra",
+  preco: 1500.75,
+};
+console.log("Dados do produto:", produto);
 // Crie um array com 3 objetos representando alunos (nome e nota). Exiba apenas a nota do segundo aluno.
+const alunos = [
+  { nome: "João", nota: 8.5 },
+  { nome: "Maria", nota: 9.2 },
+  { nome: "Carlos", nota: 7.0 },
+];
+
+console.log("Nota do segundo aluno:", alunos[1].nota);
 
 // Crie um array com tipos misturados (string, number, boolean). Exiba o tipo de cada item.
+const itens = [
+  "O aluno João aprovado!",
+  7,
+  true,
+  "O aluno reprovado",
+  8,
+  false,
+];
+
+itens.forEach((item, index) => {
+  console.log(`Posição [${index}]: Valor = ${item} | Tipo = ${typeof item}`);
+});
 
 // Use template string para exibir uma frase como: “Meu nome é X e tenho Y anos”, usando variáveis.
+const nome = "Paulo";
+const idade = 43;
+
+const frase = `Meu nome é ${nome} e tenho ${idade} anos.`;
+
+console.log(frase);
 
 // Crie uma variável saldo e outra gasto. Use operadores matemáticos para atualizar o valor do saldo e exibir o resultado.
+let saldo = 2500.0;
+const gasto = 1450.5;
+
+saldo -= gasto;
+console.log(
+  `Você gastou R$ ${gasto}. Seu novo saldo é: R$ ${saldo.toFixed(2)}.`
+);
 
 // Crie duas variáveis: senhaCorreta e senhaDigitada. Use operadores lógicos para verificar se a senha está correta.
+const senhaCorreta = "Admin123";
+const senhaDigitada = "Admin123";
+
+if (senhaDigitada === senhaCorreta) {
+  console.log("Acesso concedido! Bem-vindo.");
+} else {
+  console.log("Senha incorreta. Tente novamente.");
+}
