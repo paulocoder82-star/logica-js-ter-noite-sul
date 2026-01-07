@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function operacoesMatematicas(num1, num2, operacao) {
   if (operacao === "somar") {
     return num1 + num2;
@@ -143,10 +144,60 @@ switch (cor) {
 
 function avaliarNota(nota) {
   if (nota >= 7) {
+=======
+// Verificação de maior idade
+
+function vericaMaiorIdade(idade) {
+  if (idade >= 18) return "Você é maior de idade";
+  else return " Você é menor de idade";
+}
+
+const pessoa1 = vericaMaiorIdade(17);
+const pessoa2 = vericaMaiorIdade(18);
+const pessoa3 = vericaMaiorIdade(20);
+
+console.log(pessoa1, pessoa2, pessoa3);
+
+// function verificaRoupafesta ( corCalca, corCamisa )
+// {
+//     if ( corCalca === "preto" && corCamisa === "preto")
+
+// function verificaDia ( diaDaSemana ) ; {
+//     if ( diaDaSemana === 1)     return "Domingo";
+//     if else (  diaDaSemana === 2  ) return" Segunda";
+//     if else (  diaDaSemana === 3  ) return "Terça";
+//     if else (  diaDaSemana === 4  ) return "Quarta";
+//     if else (  diaDaSemana === 5  ) return "Quinta";
+//     if else (  diaDaSemana === 6 ) return "Sexta";
+//     if else (  diaDaSemana === 7 ) return "Sábado";
+//     else return "Dia inválido";
+
+// }
+
+// const dia1 = diaDaSemana (1);
+// const dia2 = diaDaSemana (3);
+// const dia3 = diaDaSemana (6);
+
+// console.log ( dia1, dia2, dia3);
+
+let cor = "vermelho";
+
+switch (cor) {
+}
+//  condição ? valorSeVerdadeiro : valorSeFalso;
+
+let idade = 20;
+let status = idade >= 18 ? "Maior de idade" : "Menor de idade";
+console.log(status);
+
+function avaliarNota(nota) {
+  if (nota > 7) {
+>>>>>>> dbc9cb8 (salvando exercício incompleto)
     return "Aprovado";
   } else if (nota >= 5) {
     return "Recuperação";
   } else {
+<<<<<<< HEAD
     return "Reprovado";
   }
 }
@@ -158,3 +209,8 @@ const aluno3 = avaliarNota(3.5);
 console.log(aluno1);
 console.log(aluno2);
 console.log(aluno3);
+=======
+    return "Reprovação";
+  }
+}
+>>>>>>> dbc9cb8 (salvando exercício incompleto)
